@@ -1,0 +1,413 @@
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+#student-id {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MAIN SECTIONS
+========================================= */
+
+.task-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.task-section h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+
+/* =========================================
+   AUTHENTICATION
+========================================= */
+
+#auth-section {
+    max-width: 550px;
+    margin: 0 auto 25px;
+}
+
+#auth-description {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#auth-section h3 {
+    font-size: 17px;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+#register-form {
+    display: none;
+}
+
+#login-form,
+#register-form {
+    margin-top: 15px;
+}
+
+#login-button,
+#register-button {
+    width: 100%;
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 13px;
+    margin-top: 5px;
+}
+
+#login-button:hover,
+#register-button:hover {
+    background: #4338ca;
+}
+
+.auth-switch {
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.auth-switch p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.secondary-button {
+    background: transparent;
+    color: #4f46e5;
+    padding: 5px 10px;
+}
+
+.secondary-button:hover {
+    background: #eef2ff;
+}
+
+#auth-section[hidden],
+#app-section[hidden] {
+    display: none;
+}
+
+
+/* =========================================
+   USER ACCOUNT
+========================================= */
+
+.user-section {
+    padding: 20px 25px;
+}
+
+#user-email {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 5px;
+    overflow-wrap: anywhere;
+}
+
+.logout-button {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.logout-button:hover {
+    background: #fecaca;
+}
+
+
+/* =========================================
+   FORMS
+========================================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 15px;
+    background: #ffffff;
+    color: #1e293b;
+    transition: border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease,
+    transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#task-submit {
+    background: #4f46e5;
+    color: #ffffff;
+    width: 100%;
+}
+
+#task-submit:hover {
+    background: #4338ca;
+}
+
+#refresh-tasks {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+#refresh-tasks:hover {
+    background: #cbd5e1;
+}
+
+
+/* =========================================
+   TASK LIST
+========================================= */
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.list-header h2 {
+    margin-bottom: 0;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#task-list > p {
+    color: #64748b;
+    text-align: center;
+    padding: 20px;
+}
+
+.task-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 18px;
+    background: #ffffff;
+}
+
+.task-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.task-description {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.task-status {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #fef3c7;
+    color: #92400e;
+    margin-bottom: 14px;
+}
+
+.task-item:has(.task-status) {
+    border-left: 4px solid #6366f1;
+}
+
+.task-item button {
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.edit-task {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.edit-task:hover {
+    background: #bfdbfe;
+}
+
+.delete-task {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.delete-task:hover {
+    background: #fecaca;
+}
+
+.toggle-task {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.toggle-task:hover {
+    background: #bbf7d0;
+}
+
+
+/* =========================================
+   STATUS MESSAGES
+========================================= */
+
+#status-message {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0;
+    min-height: 20px;
+    color: #64748b;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contribution-link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#contribution-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .task-section {
+        padding: 18px;
+    }
+
+    #auth-section {
+        padding: 20px;
+    }
+
+    .list-header {
+        align-items: flex-start;
+    }
+
+    .task-item button {
+        margin-bottom: 5px;
+    }
+
+    .logout-button {
+        padding: 9px 12px;
+    }
+}
