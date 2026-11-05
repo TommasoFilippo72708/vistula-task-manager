@@ -55,7 +55,7 @@ The application requires an active Supabase project and a correctly configured `
 
 ## Deployment
 
-The application will be published using GitHub Pages.
+The application is published using GitHub Pages.
 
 **Application URL:**  
 https://tommasofilippo72708.github.io/vistula-task-manager/
